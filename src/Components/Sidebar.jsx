@@ -9,6 +9,7 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github (1).svg";
 import sidImage from "../assets/portfolio_pic.png";
 import SocialIcon from "./SocialIcon";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -25,12 +26,12 @@ const Sidebar = () => {
           </div>
         </div>
         <nav className="space-y-4 ">
-          <MenuItem icon={home} label="Home" />
-          <MenuItem icon={experience} label="Experience" />
-          <MenuItem icon={projects} label="Projects" />
-          <MenuItem icon={skills} label="Skills" />
-          <MenuItem icon={about} label="About" />
-          <MenuItem icon={contact} label="Contact" />
+          <MenuItem link="/" icon={home} label="Hero" />
+          <MenuItem link="/experience" icon={experience} label="Experience" />
+          <MenuItem link="/projects" icon={projects} label="Projects" />
+          <MenuItem link="/skills" icon={skills} label="Skills" />
+          <MenuItem link="/about" icon={about} label="About" />
+          <MenuItem link="/contact" icon={contact} label="Contact" />
           
         </nav>
 
@@ -82,11 +83,11 @@ const Sidebar = () => {
     </div>
   );
 };
-const MenuItem = ({ icon, label }) => (
-  <div className="flex items-center gap-3 text-sm hover:bg-gray-800 px-2 py-1 rounded cursor-pointer transition">
+const MenuItem = ({ icon, label ,link}) => (
+  <NavLink to={link} className="flex items-center gap-3 text-sm hover:bg-gray-800 px-2 py-1 rounded cursor-pointer transition">
     <img src={icon} alt={`${label} icon`} className="w-10 h-7 invert" />
     <span>{label}</span>
-  </div>
+  </NavLink>
 );
 
 

@@ -3,17 +3,38 @@ import Sidebar from './Components/Sidebar'
 import Hero from './Components/Hero'
 import Skills from './Components/Skills'
 import Projects from './Components/Projects'
-import Experience from './Components/Experience_All/Experience'
 import Experience_main from './Components/Experience_All/Experience_main'
 import Contact_main from './Components/Contact/Contact_main'
+import About_main from './Components/About/About_main'
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import ScrollToTop from './Components/ScrollToTop'
 
+
+// const Home=()=>(
+//   <>
+//     <Hero/>
+//     <Skills/>
+//     <Projects/>
+//   </>
+// );
 
 const App=()=> {
   return (
-    <div className='flex bg-black text-white'>
+    <Router>
+      <ScrollToTop/>
+      <div className='flex bg-black text-white'>
       <Sidebar/>
       <main className='ml-60 w-full px-20 py-5 overflow-y-auto scroll-smooth '>
-        <section className=''>
+        <Routes>
+            <Route path="/" element={<Hero/>} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience_main />} />
+            <Route path="/contact" element={<Contact_main />} />
+            <Route path="/about" element={<About_main />} />
+            {/* Add more routes as needed */}
+          </Routes>
+        {/* <section className=''>
           <Hero/>
         </section>
         <section>
@@ -28,12 +49,17 @@ const App=()=> {
         <section>
           <Contact_main/>
         </section>
+        <section>
+          <About_main/>
+        </section> */}
         {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience_Line />} />
         </Routes> */}
       </main>
     </div>
+    </Router>
+    
     
 
   )

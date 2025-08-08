@@ -4,6 +4,7 @@ import github from "../../assets/github (1).svg";
 import SocialIcon from "../SocialIcon";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { NavLink } from "react-router-dom";
 
 
 
@@ -181,9 +182,9 @@ const Contact_Form = () => {
                   <span>Schedule a Call</span>
                   {/* <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" /> */}
                 </button>
-                <button className="px-8 py-4 border border-zinc-600 text-white rounded-xl font-semibold hover:border-white hover:bg-zinc-800 transition-all duration-300">
+                <NavLink to="/projects" className="px-8 py-4 border border-zinc-600 text-white rounded-xl font-semibold hover:border-white hover:bg-zinc-800 transition-all duration-300">
                   View My Work
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>

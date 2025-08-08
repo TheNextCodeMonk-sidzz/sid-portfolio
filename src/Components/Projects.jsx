@@ -3,10 +3,10 @@ import Project_card from './Project_card';
 
 const projects = [
   {
-    title: "FlowMate",
-    description: "Task management & productivity tool built with Next.js.",
+    title: "Aim Trainer",
+    description: "Personalized & Free Aim training Platform for Gamers",
     image: "/images/flowmate.png",
-    github: "https://github.com/your-repo/flowmate"
+    github: "https://github.com/TheNextCodeMonk-sidzz/Personalized_Aim_Trainer"
   },
   {
     title: "Prompt Genie",
