@@ -7,7 +7,7 @@ const About_heading = () => {
   return (
     <div>
         <div>
-            <h1 className='text-5xl font-bold '>About Me</h1>    
+            <h1 className='text-5xl font-bold '>About Me ...</h1>    
         </div>
 
         <div className='grid grid-cols-4  mt-10'>

@@ -5,7 +5,7 @@ import Experience_cards from './Experience_cards'
 
 const Experience_main = () => {
   return (
-    <div className='mx-20 my-10'>  
+    <div className='mx-20 my-20' >  
         <Experience/>
         <Experience_Line/>
         

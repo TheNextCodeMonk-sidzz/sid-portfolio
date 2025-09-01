@@ -4,7 +4,7 @@ import Contact_Form from './Contact_Form'
 
 const Contact_main = () => {
   return (
-    <div className='mx-20 my-10'>
+    <div className='mx-20 my-8'>
       <Contact_header/>
       <Contact_Form/>
     </div>

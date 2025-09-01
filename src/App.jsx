@@ -1,8 +1,8 @@
 import React from 'react'
 import Sidebar from './Components/Sidebar'
 import Hero from './Components/Hero'
-import Skills from './Components/Skills'
-import Projects from './Components/Projects'
+import Skills from './Components/Skills/Skills'
+import Projects from './Components/Project/Projects'
 import Experience_main from './Components/Experience_All/Experience_main'
 import Contact_main from './Components/Contact/Contact_main'
 import About_main from './Components/About/About_main'
@@ -22,7 +22,7 @@ const App=()=> {
   return (
     <Router>
       <ScrollToTop/>
-      <div className='flex bg-black text-white'>
+      <div className='flex bg-black text-white' style={{backgroundColor: '#121212'}}>
       <Sidebar/>
       <main className='ml-60 w-full px-20 py-5 overflow-y-auto scroll-smooth '>
         <Routes>

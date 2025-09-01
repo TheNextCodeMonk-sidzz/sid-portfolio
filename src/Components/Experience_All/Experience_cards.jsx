@@ -2,8 +2,8 @@ import React from "react";
 
 const Experience_cards = ({ Designation, company, date, summary, tech }) => {
   return (
-    <div className="ml-6 my-12">
-      <div className="bg-gray-700 p-12 w-205 rounded-xl hover:scale-102 duration-500 transition-all ">
+    <div className="mx-10 my-12">
+      <div className=" p-12 w-205 rounded-xl hover:scale-102 duration-500 transition-all " style={{backgroundColor: '#1C1C1C'}}>
         <div className="mx-2">
           <h1 className="text-2xl font-bold text-white  text-left ">
             {Designation}
@@ -29,7 +29,7 @@ const Experience_cards = ({ Designation, company, date, summary, tech }) => {
         </div>
         <div className="mx-4 flex gap-3 ">
           {tech.map((tech) => (
-            <div className="w-28 w- h-8 flex justify-center  text-sm py-1 hover:border-white cursor-pointer  border border-transparent transition-all duration-300 hover:scale-110 rounded-full bg-amber-900 ">
+            <div className="w-28 w- h-8 flex justify-center  text-sm py-1 hover:border-white cursor-pointer  border border-transparent transition-all duration-300 hover:scale-110 rounded-full bg-zinc-500 ">
               {tech}
             </div>
           ))}

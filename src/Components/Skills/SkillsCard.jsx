@@ -4,9 +4,9 @@ const SkillsCard = ({icon,name,desc}) => {
   return (
     <div className="flex flex-col items-center justify-center gap-2
                 backdrop-blur-sm
-                bg-black 
+                 
                border border-black rounded-xl p-6
-               hover:border-white hover:shadow-white transition-all duration-300 cursor-pointer ">
+               hover:border-white hover:shadow-white transition-all duration-300 cursor-pointer  " >
         <img className='invert w-10 h-10 object-contain ' src={icon} alt={name} />
         <h1 className="text-white font-semibold text-sm">{name}</h1>
         <p className=" text-center text-gray-400 font-medium text-sm">{desc}</p>

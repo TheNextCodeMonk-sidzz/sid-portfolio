@@ -168,7 +168,7 @@ const Contact_Form = () => {
           
         </div>
       </div>
-      <div className="text-center inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-800 mt-10 rounded-2xl">
+      <div className="text-center inset-0 bg-gradient-to-br from-zinc-700 via-zinc-900 to-zinc-800 mt-10 rounded-2xl">
             <div className="max-w-7xl mx-auto px-6 py-16 text-center">
               <h2 className="text-4xl font-bold text-white mb-6">
                 Ready to Start Something Amazing?
@@ -180,6 +180,11 @@ const Contact_Form = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="group px-8 py-4 bg-white text-black rounded-xl font-semibold hover:bg-zinc-200 transition-all duration-300 flex items-center justify-center space-x-2">
                   <span>Schedule a Call</span>
+                  <span className="relative group">
+                    <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-8 w-max px-1 py-2 rounded bg-zinc-900 text-white text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 z-20 shadow-lg">
+                      Send me a message and will connect soon
+                    </span>
+                  </span>
                   {/* <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" /> */}
                 </button>
                 <NavLink to="/projects" className="px-8 py-4 border border-zinc-600 text-white rounded-xl font-semibold hover:border-white hover:bg-zinc-800 transition-all duration-300">
