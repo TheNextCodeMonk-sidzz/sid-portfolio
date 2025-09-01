@@ -2,7 +2,7 @@ import React from 'react'
 import Project_card from './Project_card';
 import kardexa from "../../assets/kardexa.png";
 import yogaPose from "../../assets/Yoga_Pose_Correctness_detection.jpeg";
-import smartLirary from "../../assets/Smart_Library.png";
+import SmartLibrary from "../../assets/Smart_Library.png";
 import AimTrainer from "../../assets/Personalized_Aim_Trainer.png";
 
 
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Smart Library",
     description: "A Smart way to Manage your Library",
-    image: smartLirary,
+    image: SmartLibrary,
     github: "https://github.com/TheNextCodeMonk-sidzz/Smart-Library--LMS-"
   },
   
