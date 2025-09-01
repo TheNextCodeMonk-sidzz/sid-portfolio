@@ -2,7 +2,7 @@ import React from 'react'
 import Project_card from './Project_card';
 import kardexa from "../../assets/kardexa.png";
 import yogaPose from "../../assets/Yoga_Pose_Correctness_detection.jpeg";
-import SmartLibrary from "../../assets/Smart_Library.png";
+import SmartLibrary from "../../assets/Smart_LIbrary.png";
 import AimTrainer from "../../assets/Personalized_Aim_Trainer.png";
 
 
