@@ -4,7 +4,7 @@ import Contact_Form from './Contact_Form'
 
 const Contact_main = () => {
   return (
-    <div className='mx-20 my-8'>
+    <div className='px-4 sm:px-8 md:px-12 lg:px-20 py-8 lg:my-8'>
       <Contact_header/>
       <Contact_Form/>
     </div>

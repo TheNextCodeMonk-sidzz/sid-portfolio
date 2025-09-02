@@ -36,7 +36,7 @@ const Skills_Data=[
     {
         "name": "Java",
         "icon": java, // Placeholder icon, replace with actual Spring Data JPA icon if available
-        "desc": "Simplifies data access with JPA for Spring applications"
+        "desc": "A programming language used for building enterprise-scale applications."
     },
 
     {
